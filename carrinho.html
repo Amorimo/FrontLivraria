@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="carregar_produtos_carrinho()">
+    <header>
+        <div id="header-black">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">São Paulo, BR</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="#" class="titulo-menu">Categorias</a></li>
+                    <li><a href="esporte.html">Esporte</a></li>
+                    <li><a href="ficcao.html">Ficção</a></li>
+                    <li><a href="romance.html">Romance</a></li>
+                    <li><a href="fantasia.html">Fantasia</a></li>
+                    <li><a href="manga.html">Mangá</a></li>
+                    <li><a href="carrinho.html" class="carrinho"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                    <li><a href="usuario.html" class="usuario">Usuário</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="painel">
+            <form onsubmit="return false" id="pesquisa">
+                <input type="text" placeholder="Pesquise pelo Título" id="pesquisa-titulo">
+                <button><img src="img/lupa.png"></button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <h2>Carrinho</h2>
+
+        <div id="lista_produtos_carrinho"></div>
+        <div id="total_pagar"></div>
+        <button id="efetuar_pagamento">Efetuar Pagamento</button>
+    </main>
+    <footer>
+
+        <div id="endereco">
+            Rua Padre Manoel de Nobrega, 78 - Artur Alvim <br>
+            CEP:03532-000 - São Paulo - SP <br>
+            Tel.:11-5556-9969 | 11-5362-6663 <br>
+            Contato WhatsApp <a href="https://wa.me/11948939847">11-94893-9847</a>
+        </div>
+
+        <div id="menufooter">
+            <nav>
+                <ul>
+                    <li><a href="#" class="titulo-menu">Categorias</a></li>
+                    <li><a href="esporte.html">Esporte</a></li>
+                    <li><a href="ficcao.html">Ficção</a></li>
+                    <li><a href="romance.html">Romance</a></li>
+                    <li><a href="fantasia.html">Fantasia</a></li>
+                    <li><a href="manga.html">Mangá</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="redes-pagamentos">
+            <div id="redes">
+                <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="http://www.youtube.com" target="_blank"> <img src="img/youtube.png" alt="youtube"></a>
+            </div>
+            <div id="pagamento">
+                <img src="img/tipos_pagamento.webp" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
